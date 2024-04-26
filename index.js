@@ -72,6 +72,11 @@ async function run() {
         const result = await craftCollection.updateOne(filter,craft,options);
         res.send(result);
     })
+    // user craft
+    app.get('/myCraft/:email',async(req,res)=>{
+        const cursor = await craftCollection.find({email:req.params.email})
+        const result = cursor.toArray()
+    })
     
     app.delete('/craft/:id',async(req,res)=>{
         const id = req.params.id;
