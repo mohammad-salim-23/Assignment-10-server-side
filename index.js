@@ -43,7 +43,7 @@ async function run() {
     })
       // subcategory collection
       app.get('/sub/:subcategory',async(req,res)=>{
-        const cursor = subCategoryCollection.find({subcategory:req.params.subcategory})
+        const cursor = craftCollection.find({subcategory:req.params.subcategory})
         const result = await cursor.toArray();
        res.send(result);
      })
@@ -56,7 +56,7 @@ async function run() {
           res.send(result);
          }
          catch(error){
-           console.log("something")
+           console.log(error)
          }
     })
     
@@ -78,6 +78,7 @@ async function run() {
                 email:updateCraft.email,
                 stock:updateCraft.stock,
                 userName :updateCraft.stock,
+                customization:updateCraft.customization,
 
             }
         }
