@@ -27,6 +27,7 @@ async function run() {
     await client.connect();
 
     const craftCollection = client.db('craftDB').collection('craft');
+    const subCategoryCollection =  client.db('subDB').collection('sub');
 
     app.post('/craft',async(req,res)=>{
         const newCraft = req.body;
@@ -40,12 +41,23 @@ async function run() {
         res.send(result);
 
     })
+      // subcategory collection
+      app.get('/sub/:subcategory',async(req,res)=>{
+        const cursor = subCategoryCollection.find({subcategory:req.params.subcategory})
+        const result = await cursor.toArray();
+       res.send(result);
+     })
 
     app.get('/craft/:id',async(req,res)=>{
+         try{
           const id = req.params.id;
           const query = {_id: new ObjectId(id)};
           const result = await craftCollection.findOne(query);
           res.send(result);
+         }
+         catch(error){
+           console.log("something")
+         }
     })
     
     app.put('/craft/:id',async(req,res)=>{
@@ -79,6 +91,8 @@ async function run() {
         console.log(result);
         res.send(result)
     })
+
+  
     
     app.delete('/craft/:id',async(req,res)=>{
         const id = req.params.id;
