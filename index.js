@@ -76,6 +76,8 @@ async function run() {
     app.get('/myCraft/:email',async(req,res)=>{
         const cursor =  craftCollection.find({email:req.params.email})
         const result =await cursor.toArray()
+        console.log(result);
+        res.send(result)
     })
     
     app.delete('/craft/:id',async(req,res)=>{
