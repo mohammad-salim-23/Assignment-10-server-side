@@ -1,0 +1,80 @@
+[
+  {
+    "image": "https://example.com/mountain_view_canvas.jpg",
+    "item_name": "Mountain View Canvas",
+    "subcategory_name": "Landscape Painting",
+    "subcategory_slug": "landscape-painting",
+    "short_description": "Capture the majestic beauty of mountains with this stunning canvas painting.",
+    "price": 150,
+    "rating": 4.8,
+    "customization": "Yes",
+    "processing_time": "1-2 weeks",
+    "stock_status": "In stock",
+    "user_email": "example@example.com"
+  },
+  {
+    "image": "https://example.com/pencil_sketch_portrait.jpg",
+    "item_name": "Pencil Sketch Portrait",
+    "subcategory_name": "Portrait Drawing",
+    "subcategory_slug": "portrait-deawing",
+    "short_description": "Immortalize your loved ones with a detailed pencil sketch portrait.",
+    "price": 80,
+    "rating": 4.5,
+    "customization": "Yes",
+    "processing_time": "2-3 days",
+    "stock_status": "In stock",
+    "user_email": "example@example.com"
+  },
+  {
+    "image": "https://example.com/floral_watercolor_art.jpg",
+    "item_name": "Floral Watercolor Art",
+    "subcategory_name": "Watercolour Painting",
+    "subcategory_slug": "watercolor-painting",
+    "short_description": "Brighten up your space with vibrant floral watercolor paintings.",
+    "price": 50,
+    "rating": 4.7,
+    "customization": "No",
+    "processing_time": "1 week",
+    "stock_status": "In stock",
+    "user_email": "example@example.com"
+  },
+  {
+    "image": "https://example.com/realistic_oil_portrait.jpg",
+    "item_name": "Realistic Oil Portrait",
+    "subcategory_name": "Oil Painting",
+    "subcategory_slug": "oil-painting",
+    "short_description": "Capture lifelike portraits with the rich textures of oil paint.",
+    "price": 200,
+    "rating": 4.9,
+    "customization": "Yes",
+    "processing_time": "3-4 weeks",
+    "stock_status": "Made to Order",
+    "user_email": "example@example.com"
+  },
+  {
+    "image": "https://example.com/figure_charcoal_sketch.jpg",
+    "item_name": "Figure Charcoal Sketch",
+    "subcategory_name": "Charcoal Sketching",
+    "subcategory_slug": "charcoal-sketching",
+    "short_description": "Create dramatic sketches with charcoal, perfect for figure studies.",
+    "price": 70,
+    "rating": 4.6,
+    "customization": "Yes",
+    "processing_time": "1 week",
+    "stock_status": "In stock",
+    "user_email": "example@example.com"
+  },
+  {
+    "image": "https://example.com/comic_strip_drawing.jpg",
+    "item_name": "Comic Strip Drawing",
+    "subcategory_name": "Cartoon Drawing",
+    "subcategory_slug": "cartoon-drawing",
+    "short_description": "Tell stories through engaging comic strip drawings.",
+    "price": 40,
+    "rating": 4.4,
+    "customization": "No",
+    "processing_time": "2-3 days",
+    "stock_status": "In stock",
+    "user_email": "example@example.com"
+  }
+]
